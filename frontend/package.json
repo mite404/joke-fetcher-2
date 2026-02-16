@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --hot src/index.ts",
+    "dev": "bun run vite",
     "start": "NODE_ENV=production bun src/index.ts",
-    "build": "bun run build.ts"
+    "build": "bun run vite build"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
@@ -15,17 +15,18 @@
     "bun-plugin-tailwind": "^0.1.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "express": "^5.2.1",
     "lucide-react": "^0.545.0",
     "react": "^19",
     "react-dom": "^19",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/bun": "latest",
+    "@vitejs/plugin-react": "^5.1.4",
     "tailwindcss": "^4.1.11",
-    "tw-animate-css": "^1.4.0"
+    "tw-animate-css": "^1.4.0",
+    "vite": "^7.3.1"
   }
 }
